@@ -12,7 +12,7 @@ function toggleDarkLightMode(isLight) {
     document.documentElement.setAttribute('data-theme', `${mode}`);
     toggleIcon.children[0].textContent = isLight ? 'Light Mode' : 'Dark Mode';
     isLight ? toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun') : toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon');
-    imagesArray.forEach(image => image.src = isLight ? image.src.replace('dark', 'light') : image.src.replace('light', 'dark'));
+    imagesArray.forEach(image => image.src = isLight ? image.src.replace('_dark', '_light') : image.src.replace('_light', '_dark'));
     localStorage.setItem('theme', mode);
 }
 
