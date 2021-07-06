@@ -1,9 +1,9 @@
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
 const nav = document.getElementById('nav');
 const toggleIcon = document.getElementById('toggle-icon');
-const imagesArray = document.querySelectorAll('.imgs')
+const imagesArray = document.querySelectorAll('.imgs');
 const textBox = document.getElementById('text-box');
-
+console.log(imagesArray);
 // Change modes styles
 function toggleDarkLightMode(isLight) {
     let mode = isLight ? 'light' : 'dark';
